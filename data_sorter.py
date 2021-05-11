@@ -3,8 +3,45 @@ import os
 train_dir = "Data/cats_dogs_dataset/train"
 valid_dir = "Data/cats_dogs_dataset/valid"
 
+"""
+this script gets directory with structure
+
+/Foler
+    /train
+        /img1.jpg
+        /img1.txt
+    /valid
+        /img2.jpg
+        /img2.txt
+
+and converts it like this
+
+/Foler
+    /valid
+        /cats
+            /img1.jpg
+            /img2.jpg
+        /dogs
+            /img3.jpg
+            /img4.jpg
+    /train
+        /cats
+            /img5.jpg
+            /img6.jpg
+        /dogs
+            /img7.jpg
+            /img8.jpg
+    img1.txt
+    img2.txt
+    img3.txt
+"""
+
 
 def main(root_dir):
+    """
+    Moves images to subfolders depending on their class, specified in .txt file
+    """
+
     count = 0
     all_files = os.listdir(root_dir)
     for filename in all_files:
