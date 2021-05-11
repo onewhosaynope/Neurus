@@ -37,6 +37,7 @@ Initially, I had difficulties with processing the original dataset, usually I ga
 Temporarily I made it easy for myself by creating a **data_sorder.py** script, it split the source data for me into a convenient form. 
 However, later, having figured out how this should be done, I prepared a dataset class to work with this form of data presentation. <br>
 There were two approaches to training the neural network - manual description of parameters and transfer lerning from the **densenet121**
+So far, I am not clear on how the bounding box works in pytorch, so I cropped the picture to the area of interest for training dataset.
 <br>
 Dataset must be placed in 
 ```bash
