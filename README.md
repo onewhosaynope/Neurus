@@ -30,7 +30,7 @@ To open Jupyter Notebook, use
 $ jupyter notebook
 ```
 
-<h3>What has been done?🤖<h3>
+<h3>What has been done?🤖</h3>
   
 Three neural networks were created with a different approach to processing the dataset. 
 Initially, I had difficulties with processing the original dataset, usually I gave the formation of the dataset to a class called **ImageFolder** from the **torchvision.datasets** package and did not have an understanding of working with custom datasets. 
