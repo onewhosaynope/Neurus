@@ -44,4 +44,8 @@ Dataset must be placed in
 $ path_to_project/Data
 ```
 
+Stats:
+Average iou : 0.43795029900341
+Average accuracy: 0.675
+
 Enjoy!🌺
